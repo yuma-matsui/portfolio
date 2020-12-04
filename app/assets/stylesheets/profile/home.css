@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Castoro&display=swap");
+.main-header {
+  width: 100%;
+  height: 110px;
+  position: relative;
+}
+
+.main-header h1 {
+  font-weight: bold;
+  font-size: 35px;
+  text-align: center;
+  line-height: 110px;
+  font-family: 'Castoro', serif;
+}
+
+.main-header button.menu-icon {
+  background-color: unset;
+  outline: none !important;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 38px;
+  right: 10px;
+}
+
+.main-header button.menu-icon span {
+  display: block;
+  background-color: black;
+  width: 35px;
+  height: 3px;
+  margin-bottom: 9px;
+}
+
+.main-header button.menu-icon span:last-child {
+  margin-bottom: 0;
+}
+
+.main-wrapper {
+  height: 500px;
+  background-color: blue;
+  width: 100%;
+}
+
+.second-wrapper {
+  height: 350px;
+  background-color: yellow;
+}
+
+.main-footer {
+  height: 60px;
+  width: 100%;
+  background-color: black;
+}
+/*# sourceMappingURL=home.css.map */
