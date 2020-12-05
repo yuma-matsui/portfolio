@@ -16,10 +16,6 @@ li{
     list-style: none;
   }
 
-  a{
-    text-decoration: none;
-  }
-
   div.heading{
     height: 90px;
     padding: 10px 0;
@@ -103,6 +99,8 @@ header{
 
       &:last-child{
         margin-right: 0;
+        font-size: 20px;
+        text-decoration: none;
       }
     }
 
@@ -110,7 +108,7 @@ header{
       display: flex;
 
       & dt{
-        font-size: 18px;
+        font-size: 16px;
         margin-right: 10px;
         font-weight: normal;
       }
