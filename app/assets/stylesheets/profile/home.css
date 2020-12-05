@@ -2,6 +2,12 @@
 .home {
   background-color: #f5f5f5;
   font-family: 'Castoro', serif;
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
 }
 
 li {
@@ -10,6 +16,21 @@ li {
 
 a {
   text-decoration: none;
+}
+
+div.heading {
+  height: 90px;
+  padding: 10px 0;
+}
+
+div.heading span {
+  font-size: 16px;
+  color: #e7d31c;
+}
+
+div.heading h2, div.heading h3 {
+  font-weight: bold;
+  font-size: 28px;
 }
 
 header {
@@ -51,24 +72,10 @@ header .container button.menu-icon span:last-child {
 }
 
 .main-wrapper {
-  height: auto;
   background-color: white;
   width: 100%;
-}
-
-.main-wrapper > div:first-child {
-  height: 90px;
-  padding: 10px 0;
-}
-
-.main-wrapper > div:first-child span {
-  font-size: 16px;
-  color: #e7d31c;
-}
-
-.main-wrapper > div:first-child h2 {
-  font-weight: bold;
-  font-size: 28px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .main-wrapper > div:nth-child(2) img {
@@ -76,7 +83,7 @@ header .container button.menu-icon span:last-child {
 }
 
 .main-wrapper > div:nth-child(2) a {
-  font-size: 20px;
+  font-size: 25px;
   color: black;
   margin-right: 5px;
 }
@@ -102,14 +109,33 @@ header .container button.menu-icon span:last-child {
   font-size: 20px;
 }
 
-.second-wrapper {
-  height: 350px;
-  background-color: yellow;
+.second-wrapper .card {
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-.main-footer {
-  height: 60px;
+.second-wrapper .card-title {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.second-wrapper .card-text dt {
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.second-wrapper .card-text dd {
+  font-weight: normal;
+  font-size: 14px;
+}
+
+footer {
+  height: 55px;
   width: 100%;
-  background-color: black;
+}
+
+footer h4 {
+  font-size: 13px;
+  line-height: 55px;
 }
 /*# sourceMappingURL=home.css.map */

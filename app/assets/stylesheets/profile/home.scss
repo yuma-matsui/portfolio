@@ -4,6 +4,12 @@
 .home{
   background-color: #f5f5f5;
   font-family: 'Castoro', serif;
+  margin: 0;
+}
+
+ul{
+  padding: 0;
+  margin: 0;
 }
 
 li{
@@ -13,6 +19,22 @@ li{
   a{
     text-decoration: none;
   }
+
+  div.heading{
+    height: 90px;
+    padding: 10px 0;
+
+    & span{
+      font-size: 16px;
+      color: #e7d31c;
+    }
+    & h2, h3{
+      font-weight: bold;
+      font-size: 28px;
+    }
+  }
+
+
 // ==========共通部分=================
 
 
@@ -64,24 +86,9 @@ header{
 // ===========メイン================
 //==================================
 .main-wrapper{
-  height: auto;
   background-color: white;
   width: 100%;
-  
-
-  &>div:first-child{
-    height: 90px;
-    padding: 10px 0;
-
-    & span{
-      font-size: 16px;
-      color: #e7d31c;
-    }
-    & h2{
-      font-weight: bold;
-      font-size: 28px;
-    }
-  }
+  box-shadow: 0 5px 10px rgba($color: black, $alpha: .5);
 
   &>div:nth-child(2){
 
@@ -90,7 +97,7 @@ header{
     }
 
     & a{
-      font-size: 20px;
+      font-size: 25px;
       color: black;
       margin-right: 5px;
 
@@ -122,13 +129,41 @@ header{
 //===================================
 
 
+// ===========メイン2===============
+//==================================
+
 .second-wrapper{
-  height: 350px;
-  background-color: yellow;
+
+  .card{
+    box-shadow: 0 5px 10px rgba($color: black, $alpha: .5);
+  }
+  & .card-title{
+    font-weight: bold;
+    font-size: 22px;
+  }
+
+  & .card-text{
+    & dt{
+    font-size: 16px;
+    margin-top: 15px;
+    }
+    & dd{
+      font-weight: normal;
+      font-size: 14px;
+    }
+  }
 }
 
-.main-footer{
-  height: 60px;
+// ========メイン2ここまで==========
+//==================================
+
+
+footer{
+  height: 55px;
   width: 100%;
-  background-color: black;
+
+  & h4{
+    font-size: 13px;
+    line-height: 55px;
+  }
 }
