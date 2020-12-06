@@ -165,6 +165,9 @@ div.heading h2, div.heading h3 {
   margin-top: 30px;
   color: black;
   text-decoration: none;
+  border: none;
+  background-color: unset;
+  outline: none !important;
 }
 
 .main-title {
@@ -176,6 +179,7 @@ div.heading h2, div.heading h3 {
   display: block;
   font-size: 14px;
   color: #535353;
+  text-align: left;
 }
 
 header {
