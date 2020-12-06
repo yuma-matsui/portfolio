@@ -112,19 +112,64 @@ header .container button.menu-icon span:last-child {
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-.second-wrapper .card-title {
+.second-wrapper .card .card-title {
   font-weight: bold;
   font-size: 22px;
 }
 
-.second-wrapper .card-text dt {
+.second-wrapper .card .card-text dt {
   font-size: 16px;
   margin-top: 15px;
 }
 
-.second-wrapper .card-text dd {
+.second-wrapper .card .card-text dd {
   font-weight: normal;
   font-size: 14px;
+}
+
+.second-wrapper .card a {
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  border-radius: 3px;
+  font-weight: 600;
+  padding: 5px 20px;
+  z-index: 1;
+}
+
+.second-wrapper .card a.slide-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+.second-wrapper .card a.slide-bg::before {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+  z-index: -1;
+}
+
+.second-wrapper .card a.slide-bg:hover {
+  color: white;
+}
+
+.second-wrapper .card a.slide-bg:hover::before {
+  -webkit-transform: none;
+          transform: none;
 }
 
 footer {
