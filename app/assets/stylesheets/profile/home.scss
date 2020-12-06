@@ -68,12 +68,30 @@ header{
         width: 35px;
         height: 3px;
         margin-bottom: 9px;
+        transition: transform .7s;
 
         &:last-child{
           margin-bottom: 0;
         }
       }
    }
+  }
+}
+
+.menu-open{
+  & .menu-icon{
+    & > span{
+      
+      &:nth-child(1){
+        transform: translateY(12px) rotate(225deg);
+      }
+      &:nth-child(2){
+        transform: translateX(-18px) scaleX(0);
+      }
+      &:nth-child(3){
+        transform: translateY(-12px) rotate(-225deg);
+      }
+    }
   }
 }
 
