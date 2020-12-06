@@ -61,10 +61,29 @@ header .container button.menu-icon span {
   width: 35px;
   height: 3px;
   margin-bottom: 9px;
+  -webkit-transition: -webkit-transform .7s;
+  transition: -webkit-transform .7s;
+  transition: transform .7s;
+  transition: transform .7s, -webkit-transform .7s;
 }
 
 header .container button.menu-icon span:last-child {
   margin-bottom: 0;
+}
+
+.menu-open .menu-icon > span:nth-child(1) {
+  -webkit-transform: translateY(12px) rotate(225deg);
+          transform: translateY(12px) rotate(225deg);
+}
+
+.menu-open .menu-icon > span:nth-child(2) {
+  -webkit-transform: translateX(-18px) scaleX(0);
+          transform: translateX(-18px) scaleX(0);
+}
+
+.menu-open .menu-icon > span:nth-child(3) {
+  -webkit-transform: translateY(-12px) rotate(-225deg);
+          transform: translateY(-12px) rotate(-225deg);
 }
 
 .main-wrapper {
