@@ -20,3 +20,10 @@ class TextAnimation{
     this.el.classList.toggle('inview');
   }
 }
+
+class TweenTextAnimation extends TextAnimation{
+  constructor(el){
+    super(el);
+    
+  }
+}
