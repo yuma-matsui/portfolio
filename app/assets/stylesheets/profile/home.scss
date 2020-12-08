@@ -169,7 +169,8 @@ header{
   & .container{
     position: relative;
 
-    & .animate-title{
+    & .animate-title,
+     .tween-animate-title{
       color: white;
       font-weight: bold;
       font-size: 35px;
@@ -181,23 +182,30 @@ header{
         opacity: 1;
         & .char{
           display: inline-block;
-
-          @include animation(
-            $name: kf-animate-chars,
-            $duration: .5s,
-            $timing-function: cubic-bezier(.39, 1.57, .58, 1),
-            $fill-mode: both
-          );
-  
-          @for $i from 1 through 16 {
-            &:nth-child(#{$i}){
-              animation-delay: $i * .04s;
-            }
-          }
         }
-      }  
+      }
+      
+      & .char{
+        opacity: 0;
+      }
     }
   }
+}
+
+.animate-title.inview .char{
+  @include animation(
+    $name: kf-animate-chars,
+    $duration: .5s,
+    $timing-function: cubic-bezier(.39, 1.57, .58, 1),
+    $fill-mode: both
+  );
+
+  @for $i from 1 through 16 {
+    &:nth-child(#{$i}){
+      animation-delay: $i * .04s;
+    }
+  }
+
 }
 
 @keyframes kf-animate-chars{
