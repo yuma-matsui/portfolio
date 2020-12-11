@@ -1,6 +1,6 @@
 #global-container {
-  -webkit-transition: opacity  .3s;
-  transition: opacity  .3s;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
 }
 
 .pace-running #global-container {

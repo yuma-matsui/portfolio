@@ -382,6 +382,14 @@ header .container .tween-animate-title .char {
 .second-wrapper .card {
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  height: auto;
+}
+
+.second-wrapper .card .card-img-top {
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
 }
 
 .second-wrapper .card .card-title {

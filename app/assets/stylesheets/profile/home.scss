@@ -279,6 +279,13 @@ header{
 
   & .card{
     box-shadow: 0 5px 10px rgba($color: black, $alpha: .5);
+    height: auto;
+
+    & .card-img-top{
+      height: 150px;
+      object-fit: cover;
+      width: 100%;
+    }
    
     & .card-title{
       font-weight: bold;
