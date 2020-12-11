@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function(){
   const ta = new TweenTextAnimation('.tween-animate-title');
-  ta.animate();
+  Pace.on('done', ta.animate.bind(ta));
 });
 
 
